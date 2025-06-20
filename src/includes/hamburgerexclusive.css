@@ -1,0 +1,73 @@
+.float{
+    transform: translateX(0px);
+    animation: floating 3s ease-in-out infinite;
+  }
+  @keyframes floating {
+    0%{
+      transform: translateY(0px);
+    }
+    50%{
+      transform: translateY(-15px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  }
+
+
+  .line1, .line2, .line3, .overlayMenu, .li {
+        transition: all 0.5s ease;
+    }
+
+  .line1Transform {
+      transform: rotate(45deg) translate(3px, 5.5px);
+  }
+
+  .removeLine2 {
+      opacity: 0;
+  }
+
+  .line3Transform {
+      transform: rotate(-45deg) translate(4px, -8px);
+  }
+
+  .overlayMenu {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    pointer-events: none; 
+    top: 0;
+    margin: 0;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 100;
+    display:none;
+}
+li {
+font-size: 20px;
+list-style: none;
+color: #e59d2c;
+padding: 5px;
+user-select: none;
+
+}
+li:hover {
+cursor: pointer;
+opacity: 0.5;
+}
+
+.showOverlay {
+opacity: 0.95;
+display:flex;
+pointer-events: auto;
+}
+
+.liUp {
+transform: translateY(-10px);
+}

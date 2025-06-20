@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+/* Default light mode styles (white) */
+html, body {
+  background-color: white;
+  overflow-x: hidden;
+}
+
+.dark html,
+.dark body {
+  background-color: #121212;
+}
+
+.sora {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Add these styles to your app.css */
+.table-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-container table {
+  width: 100%;
+  min-width: 900px; /* Match your min-width from component */
+}
+
+/* This will hide the scrollbar while keeping functionality */
+.table-container::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.dark .table-container::-webkit-scrollbar-track {
+  background: #2d3748;
+}
+
+.dark .table-container::-webkit-scrollbar-thumb {
+  background: #4a5568;
+}
+
+.dark .table-container::-webkit-scrollbar-thumb:hover {
+  background: #718096;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; 
+}
+.loader {
+  border-top-color: transparent;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+  border-left-color: #fff;
+}
