@@ -9,5 +9,10 @@ export default defineConfig({
     // alias: {
     //   "@": path.resolve( "./src"),
     // },
+    build: {
+      rollupOptions: {
+        external: ['@react-oauth/google']
+      }
+    }
   },
 })
