@@ -102,7 +102,7 @@ const Home = () => {
               className="inline-block bg-black text-white text-lg sm:text-2xl py-2 sm:py-4 px-[50px] mt-5 rounded-4xl shadow-2xl cursor-pointer border hover:bg-white hover:text-black hover:border-[1px] hover:border-black"
               data-aos="fade-up"
             >
-              fa
+              Cooks
             </Link>
           </div>
 
